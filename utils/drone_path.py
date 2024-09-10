@@ -46,9 +46,6 @@ class DronePath:
         else:
             raise AttributeError('Необходимо сначала вычислить общую дистанцию')
 
-    
-# if __name__ == "__main__":
-#     coordinates = np.array([[40.7128, -74.0060], [40.7129, -74.0059], [40.7127, -74.0061], [40.7126, -74.0062], [40.7125, -74.0063]])
-#     drone_path = DronePath(coordinates)
-#     drone_path.calculate_total_distance()
+ 
+
     

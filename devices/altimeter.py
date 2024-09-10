@@ -1,8 +1,6 @@
 from app.device import Device
 
-
 class Altimeter(Device):
-
     def __init__(self, id = "0"):
         super().__init__()
         self.id = id

@@ -1,10 +1,13 @@
+from dotenv import load_dotenv
+from dotenv import dotenv_values
+import os
 import requests
 
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 
-GEOCODER_API_KEY = 'e60936ce-1b32-4fde-af6b-5f331d3e0cb7' # from https://developer.tech.yandex.com/services/3
-WEATHER_ACCESS_KEY = '96a20efc-e156-473a-8fe0-89c630d2b4ac' # https://yandex.ru/pogoda/b2b/console/api-page
-CITY_NAME = 'Москва'
-
+geocoder_api_key = os.getenv('GEOCODER_API_KEY')
+weather_access_key = os.getenv('WEATHER_ACCESS_KEY')
+city_name = os.getenv('CITY_NAME')
 
 class Get_weather:
     def __init__(self, city_name, geocoder_api_key, weather_access_key) -> None:

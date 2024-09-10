@@ -1,5 +1,4 @@
 from flask import Flask, Response, request, jsonify, g, make_response
-from apis.yandex_weahter import Get_weather
 from commands.move_forward import MoveForward
 from commands.land import Land
 from commands.takeoff import TakeOff
